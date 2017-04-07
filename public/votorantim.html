@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Votorantim - Test Page</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style/bot.css" />
+    <link rel="stylesheet" href="style/vot.css" />
+    <style>
+        html {
+            height: 100%;
+            width: 100%;
+        }
+        
+        body {
+            background-image: url(images/fundo2.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            width: 100%;
+            height: 100%;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-content: flex-end;
+            align-items: flex-end;
+        }
+        
+        .overlay {
+            border: 1px solid #ccc;
+            height: 0%;
+            width: 22%;
+            position: absolute;
+            z-index: 99;
+            bottom: 32px;
+            top: auto;
+            right: 0;
+            background-color: rgb(204, 204, 204);
+            background-color: rgba(245, 247, 250, 0.9);
+            overflow-x: hidden;
+            overflow-y: hidden;
+            transition: 0.5s;
+        }
+        
+        .overlay-content {
+            font-family: 'Lato', sans-serif;
+            position: relative;
+            bottom: 5%;
+            text-align: center;
+            margin-top: 35px;
+        }
+        
+        .overlay a {
+            padding: 8px;
+            text-decoration: none;
+            font-size: 36px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+        
+        .overlay a:hover,
+        .overlay a:focus {
+            color: #f1f1f1;
+        }
+        
+        @media screen and (max-height: 450px) {
+            .overlay a {
+                font-size: 20px
+            }
+        }
+        
+        .open-button {
+            float: left;
+            top: 20px;
+            width: 22px;
+        }
+        
+        #asd {}
+
+    </style>
+</head>
+
+<body>
+    <div id="myNav" class="overlay">
+        <div class="overlay-content">
+            <textarea rows="24" cols="50" style="overflow-y: auto;height: 400px; max-height: 400px;background-color: rgb(245, 247, 250);" class="form-control custom-control">
+                Watson Conversation
+            </textarea>
+            <br>
+            <br>
+            <input type="text" name="input" placeholder="User Input" class="form-control" style="position: relative;bottom: 34px;background-color: white;"><button class="btn btn-m btn-primary btn-block " style="position: relative;bottom: 30px;">Send</button>
+        </div>
+    </div>
+
+    <img src="images/chatbar.png" alt="img" class="open-b1utton" style="font-size:30px;cursor:pointer;width: 22%;height: 5%;opacity: 0.9;" onclick="openNav()" id="asd" data-toggle="tooltip" title="Click here for help" data-placement="left" />
+
+
+    <script>
+        var navToggle = false;
+
+        function openNav() {
+            if (navToggle) {
+                document.getElementById("myNav").style.width = "22%";
+                document.getElementById("myNav").style.height = "0%";
+
+                navToggle = false;
+            } else {
+                document.getElementById("myNav").style.height = "81.7%";
+
+                navToggle = true;
+            }
+        }
+
+    </script>
+</body>
+
+</html>
