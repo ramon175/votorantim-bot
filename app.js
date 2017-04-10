@@ -27,7 +27,7 @@ var appEnv = cfenv.getAppEnv();
 
 
 
-app.use(logger('dev'));
+//app.use(logger('dev'));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(methodOverride());
@@ -79,6 +79,7 @@ app.post('/converse', function(req, res, next) {
       // if(!data.output.text[0]){
       //   data.output.text[0] = resposta[data.intents[0].intent];
       // }
+        console.log(data);
       return res.json(data);
     }
   });

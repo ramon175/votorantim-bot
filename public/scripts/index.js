@@ -43,7 +43,7 @@ var converse = function(userText, context, guarda) {
           if (userText == null){
             sendMessage(answers.output.text,'B');
           }else{
-            if(answers.intents[0].confidence > 0.6 || answers.context.system.dialog_turn_counter > 2){
+            if(answers.intents[0].confidence > 0.4 || answers.context.system.dialog_turn_counter > 2){
               
               if(answers.output.text.length > 1){
                 for(var i=0; i < answers.output.text.length; i++){
