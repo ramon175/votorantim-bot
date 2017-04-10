@@ -52,7 +52,7 @@ var conversation = watson.conversation({
 
 
 //Worskpace ID a ser mudado pelo seu Conversation
-var workspace = process.env.WORKSPACE_id ||'877f1af4-4643-4ebc-9c61-4e2091444289'// 'e8a9bc68-cfdc-4f8a-b48e-e6abcec2b4d7';
+var workspace = process.env.WORKSPACE_id ||'877f1af4-4643-4ebc-9c61-4e2091444289' //'e8a9bc68-cfdc-4f8a-b48e-e6abcec2b4d7';
 
 
 app.post('/converse', function(req, res, next) {
@@ -95,7 +95,7 @@ app.listen(appEnv.port, '0.0.0.0', function() {
   console.log("server starting on " + appEnv.url);
 });
 
-
+ 
 
 //-----------------------------------
 
@@ -103,7 +103,7 @@ app.listen(appEnv.port, '0.0.0.0', function() {
 var request = require('request');
 
 var options = {
-    url: "http://fipeapi.appspot.com/api/1/carros/marcas/fiat",
+    url: "http://voto-sample.mybluemix.net/sample?value=10000&period=24&total=50000",
     headers: {
         Accept: 'text/json'
     }

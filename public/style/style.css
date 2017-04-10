@@ -9,9 +9,9 @@ background-position: center center;
 background-attachment: fixed;
 background-size: cover;
     opacity:1.0;
-  /*background-repeat: no-repeat;
+  background-repeat: no-repeat;
   background-size: contain;
-  background-size: 100%;*/  
+  background-size: 100%;  
     background-color: #edeff2;
     font-family: "Calibri", "Roboto", sans-serif;
 }
